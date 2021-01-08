@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Genilson Cavalcante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo Dropzone</title>
+    <style>
+        .caixa{
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+        }
+        .drop{
+            height: 200px;
+            width: 200px;
+            border: crimson 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="c1" class="caixa" draggable="true"></div><!--Div Arrastável-->
+    <div id="c2" class="caixa" draggable="true"></div>
+
+    <div Class="drop" dropzone="copy"></div><!--Esta dropzone é um alvo que serve para capturar o que foi arrastado para dentro dela, neste caso criando uma cópia, mas como esse é um atributo que ainda não é totalmente eficaz no momento, necessitamos do auxílio do JavaScript.-->
+</body>
+</html>
