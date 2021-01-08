@@ -25,6 +25,7 @@
     <div Class="drop" dropzone="copy"></div><!-- Esta dropzone é um alvo que serve para capturar o que foi arrastado para dentro dela, neste caso criando uma cópia, mas como esse é um atributo que ainda não é totalmente eficaz no momento, necessitamos do auxílio do JavaScript.-->
     <script>
         const caixas = document.querySelectorAll('.caixa');
+        const dropZone = document.querySelector('[dropzone]');
 
         caixas.forEach(caixaEl => {
             caixaEl.addEventListener('dragstart', e => {
@@ -32,6 +33,15 @@
                 console.log(e.target.id);
             });
         });
+
+        dropZone.addEventListener('dragover', e => {
+            e.preventDefualt();
+        });
+
+        dropZone.addEventListener('drop', e => {
+            console.log(e.dataTransfer.getData('Text'));
+        });
+
     </script>
 </body>
 </html>
