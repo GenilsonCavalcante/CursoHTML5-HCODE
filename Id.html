@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo ID</title>
+    <style>
+        #box-1{
+            height: 150px;
+            width: 150px;
+            background-color: darkorange;
+        }
+        #box-2{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(0, 153, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+
+    <script>
+        const box1 = document.getElementById('box-1');//Seletor para o id;
+        console.log(box1);
+
+        const box2 = document.querySelector('#box-2');//Seletor para o css;
+        console.log(box2);
+    </script>
+</body>
+</html>
