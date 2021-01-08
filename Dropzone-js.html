@@ -39,7 +39,12 @@
         });
 
         dropZone.addEventListener('drop', e => {
-            console.log(e.dataTransfer.getData('Text'));
+            //console.log(e.dataTransfer.getData('Text'));
+
+            const id = e.dataTransfer.getData('Text');
+            const element = document.getElementById(id);
+
+            e.target.appendChild(element);
         });
 
     </script>
