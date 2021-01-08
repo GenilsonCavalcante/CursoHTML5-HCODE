@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Genilson Cavalcante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo Data-*</title>
+</head>
+<body>
+    <ul>
+        <li data-id="1" data-email="joaohcragel@gmail.com">João Rangel</li>
+        <li data-id="2" data-email="genilson.cavalcante105@gmail.com">Genilson Cavalcante</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liEl => {
+            console.log(liEl.dataset.email);//Em ferramentas do desenvolvedor no navegador, vá em elements e console ou aperte ESC, e verá no console os valores dos objetos dos email's que estão dentro de data.
+        });
+    </script>
+</body>
+</html>
