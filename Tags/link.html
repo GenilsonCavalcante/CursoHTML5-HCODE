@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag link</title>
+    <link rel="stylesheet" href="style.css" type="text/css"><!--Chamando um arquivo externo.-->
+    <link rel="shortcut icon" href="https://storage.googleapis.com/hcode.com.br/assets/square.jpg" type="image/x-icon"><!--Este link faz aparecer um ícone no título da página, e quando for criar um atalho o ícone aparece.-->
+    <link rel="alternate" type="aplication/json" title="Versão em JSON" href="link.json"><!--Este faz com que caso o conteúdo não seja carregado, existe um outro formato de conteúdo que pode ser mostrado, exemplo: .json -->
+    <link rel="author" href="https://www.hcode.com.br"><!--Este link faz com que leve a página do author que produziu esta página.-->
+    <link rel="dns-prefetch" href="https://www.hcode.com.br"><!--Este link faz com que acelere a carregação da página, fazendo com que a página quando seja muito grande demais, prepare carregando alguns conteúdos.-->
+    <link rel="help" href="help.html"><!--Esta página faz com que atribua uma ajuda a o usuário sobre algo em um arquivo html separado.-->
+    <link rel="license" href="licenca.html"><!--Este link informa o caminho para uma página com a lincença de alguma coisa do seu site, seja os seus direitos autorais por exemplo.-->
+    <link rel="next" href="page_02.html"><!--Faz com que informa a próxima página do site a ser carregada, assim o navegador prepara a página a ser carregada, otimizando o tempo.-->
+    <link rel="prev" href="page_01.html"><!--Faz com que carregue a página anterior.-->
+    <link rel="prefetch" href="https://www.hcode.com.br"><!--Este é mais avançado do que o semelhante a ele, o de cima dns, este consome mais dados, porém recarrega as próximas páginas-->
+    <link rel="preconnect" href="https://www.hcode.com.br"><!--Vai mais além ainda do que o de cima, preconectando as páginas-->
+    <link rel="preload" href="https://www.hcode.com.br"><!--Esta não faz apenas solicitações para otimizar o carregamento, e sim já faz o carregamento total do sites.-->
+    <link rel="prerender" href="https://www.hcode.com.br"><!--Esta faz com que recarregue as imagens que nomalmente demoram um certo tempo para carregarem, assim este link já faz as requisições para otimizar o carregamento das imagens.-->
+    <link rel="search" href="https://www.hcode.com.br/search"><!--Este é um link que faz com que o usuário possa fazer pesquisas dentro do próprio site.-->
+</head>
+<body>
+    <!--A tag link é mais recomendado que esteje dentro da tag head, pois assim atribui mais valores ao CEO-->
+    <ul>
+        <li>
+            <img src="image01.jpg" alt="Foto01">
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <img src="image02.jpg" alt="Foto02">
+        </li>
+    </ul>
+</body>
+</html>
