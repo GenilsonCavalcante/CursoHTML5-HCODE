@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag noscript</title>
+    <noscript>
+        <style>
+            body {
+                background-color: red;
+                color: #fff;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+    <!--Esta tag noscript é usada caso o navegador não suportar javascript ou o usuário tenha bloqueado sites com scripts, o noscript é uma alternativa que caso isso venha acontecer, ele utiliza os conteúdos nele que vão ser substituidos.-->
+    <h1>Page</h1>
+    <noscript>
+        <p>O JavaScript está desabilitado</p>
+    </noscript>
+    <script>
+        alert('Hello World!');
+    </script>
+</body>
+</html>
