@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag picture</title>
+</head>
+<body>
+    <p>Tag usada para definir mais de uma fonte de imagem. Normalmente usada para mostrar imagens de acordo com o tamanho da tela. Esta tag deve ter uma tag img e uma ou mais source's. Isso é muito útil para a criação de sites responsivos, com tamanhos de resoluções diferentes.</p>
+    <picture>
+        <source media="(min-width: 512px)" srcset="logo.png"><!--Diz que em uma tela de no mínimo de 512px, aparecerá esse logo.-->
+        <source media="(min-width: 256px)" srcset="logo256.png">
+        <img src="logo64.png" alt="Logo do Hcode">
+    </picture>
+</body>
+</html>
