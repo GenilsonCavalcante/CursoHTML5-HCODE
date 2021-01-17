@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag track</title>
+</head>
+<body>
+    <p>Tag usada para definir uma faixa de texto em uma tag de mídia. Normalmente usadas para definir legendas em vídeos.</p>
+    <video src="AV1_trailer.mp4" controls width="700px">
+        <track src="AV1_trailer_pt.vtt" label="Português (Brasil)" kind="subtitles" srclang="pt" default>
+        <track src="AV1_trailer_jp.vtt" label="Japones" kind="subtitles" srclang="jp">
+    </video><!--Dessa forma conseguimos abilitar nos recursos do vídeo dois idiomas no formato de legenda.-->
+</body>
+</html>
