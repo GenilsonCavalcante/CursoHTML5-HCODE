@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag tbody</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <p>Tag usada para agrupar o conteúdo do corpo da tabela. A tag deve ser filha de uma tag table.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">A1</td><!--Ocupando o espaço de duas células em uma só.-->
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td rowspan="2">B2</td><!--Pegando o espaço de duas linhas.-->
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>C3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
