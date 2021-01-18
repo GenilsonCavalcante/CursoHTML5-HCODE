@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag colgroup</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <p>Tag usada para definir propriedades em todas as células que formam uma coluna.</p>
+
+    <table>
+        <colgroup span="2" style="background-color: chartreuse;"></colgroup><!--Pega as duas primeiras colunas de cada linha e muda o style de cor para um tom de verde, menos a linha do entro, que no css já é definida como cinza.-->
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th><!--Colunas.-->
+                <th>C</th>
+            </tr>
+        </thead>
+        <tbody><!--Corpo de uma tabela.-->
+            <tr>
+                <td>A1</td>
+                <td>B1</td><!--Linhas-->
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+        </tbody>
+        <tfoot><!--Rpdapé da tabela-->
+            <td colspan="3">Footer</td>
+        </tfoot>
+    </table>
+</body>
+</html>
