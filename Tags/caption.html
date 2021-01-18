@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag caption</title>
+    <link rel="stylesheet" href="table.css">
+
+</head>
+<body>
+    <p>Tag usada para definir uma legenda em uma tabela. A tag deve ser inserida imediatamente depois da abertura da tag table. O atributo 'align' foi removido do HTML5.</p>
+    <table>
+        
+        <caption>Está é uma tabela</caption><!--###-->
+
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;">
+            <col style="background-color: blue;">
+        </colgroup><!--Pega as duas primeiras colunas de cada linha e muda o style de cor para um tom de verde, menos a linha do entro, que no css já é definida como cinza.-->
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th><!--Colunas.-->
+                <th>C</th>
+            </tr>
+        </thead>
+        <tbody><!--Corpo de uma tabela.-->
+            <tr>
+                <td>A1</td>
+                <td>B1</td><!--Linhas-->
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+        </tbody>
+        <tfoot><!--Rpdapé da tabela-->
+            <td colspan="3">Footer</td>
+        </tfoot>
+    </table>
+</body>
+</html>
