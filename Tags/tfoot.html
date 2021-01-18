@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag tfoot</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <p>Tag usada para agrupar o conteúdo do rodapé. A tag deve ser finha da tag table. Esta deve ser irmã das tags 'tbody' e 'tfoot', vindo então por último.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">A1</td><!--Ocupando o espaço de duas células em uma só.-->
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td rowspan="2">B2</td><!--Pegando o espaço de duas linhas.-->
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>C3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
