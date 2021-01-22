@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag nav</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header, footer{
+            height: 10vh;
+            background-color: #ccc;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+        }
+        main{
+            height: 80vh;
+            background-color: #999;
+            flex: 1;
+        }
+        aside{
+            height: 80vh;
+            background-color: gold;
+            width: 20vw;
+        }
+        ul{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <p>A tag nav, define um conjunto de links de navegação. Não há necessidade de colocar todos os links dentro de uma tag nav. podemos ter várias tags nav dentro do documento, podendo conter links diferentes, ou mesmo repetidos, ou todos os links da página.</p>
+
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cursos</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+
+    <section>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Loja Virtual</a></li>
+                </ul>
+            </nav>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam architecto repudiandae ut nulla ea illum suscipit nisi nostrum ab, in magnam pariatur blanditiis iure distinctio ducimus quasi id quibusdam beatae?</p>
+        </aside>
+        <main></main>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
