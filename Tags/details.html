@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag details</title>
+</head>
+<body>
+    <p>Tag usada para definir detalhes adicionais que o usuário pode exibir ou adicionar. Qualquer tipo de conteúdo pode ser colocado dentro dessa tag. Por padrão o conteúdo dos detalhes não é exibido para o usuário. A tag deve ter uma tag <i>summary</i> dentro dela.</p>
+
+    <details open><!--Se caso não colocar o atributo open, ele fica fechado, caso contrário ele ficará aberto mostrando o conteúdo.-->
+        <summary>Hcode</summary>
+
+        <p>Hcode é uma escola de treinamentos sobre programação.</p><!--De início, essa parágrafo não aparece para o usuário, apenas um nome 'Hcode' do summary que com ele tem uma seta, se o usuário clicar ele expande e aparece o parágrafo. OBS: Podemos fazer isso com css e javascript, mas o diferencial é que dessa forma possui um peso semântico que conta muito para os mecanismos de pesquisa.-->
+    </details>
+</body>
+</html>
