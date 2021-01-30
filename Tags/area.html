@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag area</title>
+</head>
+<body>
+    <p>Tag usada para definir áreas clicáveis em um mapa de imagem. Esta tag deve ser sempre filha de uma tag map.</p>
+
+    <img src="logo.png" alt="Logo da Hcode" usemap="#mapa-logo">
+
+    <map name="mapa-logo">
+        <area shape="circle" coords="211,263,15" href="https://www.hcode.com.br" alt="Olho Esquerdo">
+        <area shape="circle" coords="301,263,15" href="https://youtube.com/hcodebrasil" alt="Olho Direito">
+        <area shape="rect" coords="0,0,20,20" href="https://github.com/hcodebr" alt="Github da Hcode">
+    </map>
+
+    <p>Usar o map com suas tags filhas area, é muito recomendado do que usar o mousemove com javaScript, pois assim estamos colaborando para o melhor entendimento dos navegadores.</p>
+</body>
+</html>
