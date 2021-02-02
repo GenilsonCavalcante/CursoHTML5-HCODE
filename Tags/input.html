@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag input</title>
+</head>
+<body>
+    <p>Tag usada para definir um campo de entrada. Um campo de entrada serve para o usuário inserir dados ou interagir com a página. A tag pode variar de várias maneiras dependendo do atributo <b><i>type</i></b>.</p>
+    <hr>
+
+    <input type="text" value="Genilson Cavalcante"><!--Campo de texto, definido com um nome padão.-->
+    <input type="checkbox" checked><!--Quadradinho clicável, já marcado-->
+    <input type="radio" name="gender" checked><!--Bolinha clicável, já marcada. Com o 'name="gender', faz com que se existir mais de um input do tipo rádio, quando clicar em um o outro já desmarca automaticamente. ObS: isso não funciona para o tipo checkbox.-->
+    <input type="radio" name="gender">
+    <input type="color" value="#FF0000"><!--Botão que dá acesso as cores, cor definida inicialmente por padrão, vermelha.-->
+    <input type="date"><!--Para definir a data-->
+    <input type="datetime-local"><!--Para definir a data e as horas. -->
+    <form><!--Input's usados dentro de form para que o email seja validado ao ser digitado.-->
+        <input type="email">
+        <input type="submit" value="OK">
+    </form>
+    <input type="file" accept="image/png" multiple><!--Input para selecionar arquivo do seu pc na página. O atributo 'accept' faz com que só aceite aquivos de formatos que você definir. O atributo 'multiple' faz com que aceite mais de um arquivo de uma vez.-->
+    <input type="hidden" name="id" value="999"><!--Define um campo oculto, que não aparece visualmente. É útil para formularios com produtos para resistro em banco de dados.-->
+    <input type="month"><!--Campo para selecionar o mês-->
+    <input type="number" step="2"><!--Campo que aceita apenas números, pelo menos no chrome. O atributo 'step' defini o valor a ser passado quando clica na setinha para proseguir ou voltar na ordem numérica.-->
+    <input type="password"><!--Input para aceitar valores para senhas.-->
+    <input type="reset"><!--Define um botão para redefinir ao valores padrões do formulário.-->
+    <input type="button" value="Salvar"><!--Botão que pode ser usado para fazer várias coisas com o auxílio do javascript-->
+    <input type="search"><!--Para fazer uma busca.-->
+    <input type="tel"><!--Campo para número de telefone.-->
+    <input type="time">
+    <input type="url"><!--Campo para inserir uma URL-->
+    <input type="week"><!--Para verificar a semana do ano.-->
+    <input type="range" min="0" max="100" value="50"><!--Como se fosse um campo de volume.-->
+</body>
+</html>
