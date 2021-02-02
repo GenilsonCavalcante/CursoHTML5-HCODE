@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag button</title>
+</head>
+<body>
+    <p>Tag usada para definir um botão vlicável. Dentro desta tag pode ser colocado conteúdo como texto ou imagem. Sempre especifique o atributo type. Cada navegador pode usar um padrão diferente para o atributo type.</p>
+    <hr>
+
+    <form id="formulario">
+        <input type="text" value="Hcode" name="name">
+    </form>
+
+    <button type="button">Botão</button>
+    <button type="reset" form="formulario">Limpar</button><!--Mesmo não estando em um formulário, esse butão vai funcionar porque está usando o atributo 'form' que pefa o id do formulário.-->
+    <button type="submit" form="formulario">Enviar</button>
+</body>
+</html>
