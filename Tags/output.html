@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag output</title>
+</head>
+<body>
+    <p>Tag usada para mostrar o resultado de um cálculo.</p>
+    <hr>
+
+    <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+        <input type="range" id="a" value="0" min="0" max="10">
+        +
+        <input type="number" id="b" value="0">
+        =
+        <output name="c" for="a b">0</output>
+    </form>
+</body>
+</html>
