@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag datalist</title>
+</head>
+<body>
+    <p>Tag usada para definir uma lista de opções para um <b>input</b>. O ID desta tag é usado no atributo <b><i>list</i></b> da tag <b>input</b> para vinculação.</p>
+    <hr>
+
+    <input type="text" list="opcoes"><!--Chama o datalist para autocompletar os itens para serem selecionados, através dos itens das opções.-->
+
+    <datalist id="opcoes">
+        <option>PHP</option>
+        <option>JavaScript</option>
+        <option>Laravel</option>
+        <option>Boostrap</option>
+        <option>MySQL</option>
+    </datalist>
+</body>
+</html>
