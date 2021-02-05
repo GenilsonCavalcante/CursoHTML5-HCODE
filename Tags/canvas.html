@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag canvas</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        p {
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>Tag usada para definir um quadro de desenhos gráficos 2D ou 3D. Para desenhar é necessário usar o JavaScript.</p>
+    <hr>
+
+    <canvas id="quadro"></canvas>
+
+    <script>
+
+        const quadro = document.querySelector('#quadro');
+        const contexto = quadro.getContext('2d');
+
+        contexto.fillStyle = '#FF0000';
+        contexto.fillRect(0, 0, 100, 100);
+
+    </script>
+    <!--É possível fazer esse quadro apenas com o html e css, mas a vantagem de se utilizar o canvas, principalmente para animações 2D e 3D, é que o canvas possui mais desempenho.-->
+</body>
+</html>
