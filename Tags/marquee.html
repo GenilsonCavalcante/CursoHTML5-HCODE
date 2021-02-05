@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag marquee</title>
+</head>
+<body>
+    <p>Tag usada para definir uma área de rolagem de texto.</p>
+    <hr>
+
+    <marquee direction="up">Genilson Cavalcante</marquee><!--Serve para fazer com que o texto fica rolando como se fosse um letreiro.-->
+
+    <marquee direction="down" width="250" height="200" behavior="alternate" style="border: red 1px solid;">Genilson Cavalcante</marquee><!--O atributo 'behavior="alternate"', faz com que o texto fique alternando de direção ao chegar no final da borda delimitada para o movimento do texto.-->
+
+    <!--E para fazer o conteúdo ficar batendo para todos os lados:-->
+    <marquee direction="down" width="250" height="200" behavior="alternate" style="border: red 1px solid;">
+        <marquee behavior="alternate">Genilson Cavalcante</marquee>
+    </marquee>
+
+</body>
+</html>
