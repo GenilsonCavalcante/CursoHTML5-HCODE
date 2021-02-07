@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: focus</title>
+</head>
+<body>
+    <!--O evento é acionado quando focamos no elmento, no caso na caixa de texto.-->
+    <input type="text" onfocus="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>
