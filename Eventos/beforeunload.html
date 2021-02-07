@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event: afterprint e beforeprint</title>
+    <title>Event: beforeunload</title>
 </head>
-<body onbeforeprint="debug(event)" onafterprint="debug(event)">
-    <!--Evento para antes de uma impreção e depois da impressão da página-->
+<body onbeforeunload="return debug(event)">
+
     <script>
         function debug(e) {
-            alert('Evento: '+ e.type);
+            console.log('Event: ' + e.type);
+            return 'Event: ' + e.type; 
         }
     </script>
     
