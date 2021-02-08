@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: copy</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+    </style>
+</head>
+<body>
+    <!--Esse evento é acionado quando copiamos algum conteúdo de nossa página onde o evento esteje declarado. Mas se esse elemento for declarado dentro de um elemento pai, o 'body', todo o corpo da página será vinculada a esse evento.-->
+    <p oncopy="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iusto quia sequi quae exercitationem sint rerum laboriosam quasi architecto unde incidunt aliquam totam corrupti ipsam, officiis possimus nisi nihil sit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia assumenda consequatur obcaecati earum mollitia, aspernatur similique molestiae nulla quae illo autem minus culpa sapiente ducimus sequi suscipit ratione aperiam.</p>
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>
