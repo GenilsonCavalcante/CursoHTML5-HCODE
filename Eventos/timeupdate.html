@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: timeupdate</title>
+    <style>
+        video {
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <!--Esse evento ocorre quando o tempo da reprodução do vídeo é auterada/atualizado.-->
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+    controls
+    onpause="debug(event)"
+    onplay="debug(event)"
+    onplaying="debug(event)"
+    onprogress="debug(event)"
+    onseeked="debug(event)"
+    onseeked="debug(event)"
+    onstalled="debug(event)"
+    onsuspend="debug(event)"
+    ontimeupdate="debug(event)"
+    ></video>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>
