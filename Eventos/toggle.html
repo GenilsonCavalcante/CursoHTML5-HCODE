@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: toggle</title>
+</head>
+<body>
+    <!--Esse evento acontece juntamente com a tag nova do html5 'details', onde pode ser executado quando decemos a setinha da tag.-->
+    <details ontoggle="debug(event)">
+        <summary>Hcode</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rem voluptate, nisi qui temporibus laudantium eos est ipsam excepturi voluptatum sequi aliquid. Modi culpa, placeat commodi qui laboriosam exercitationem doloribus.</p>
+    </details>
+
+    <script>
+        function debug(event) {
+            console.log('Event:', event.type);
+        }
+    </script>
+</body>
+</html>
