@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: cuechange</title>
+    <style>
+        video {
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <!--Evento dispara quando um texto de um arquivo de trilha é alterado, exemplo de uma legenda de um vídeo. Toda vez que uma legenda apareve o vídeo, o evento é acionado e contabilizado.-->
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+    controls
+    >
+        <track src="../Tags/AV1_trailer_pt.vtt" label="Português" kind="subtitles" srclang="pt" default oncuechange="debug(event)"> 
+    </video>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>
