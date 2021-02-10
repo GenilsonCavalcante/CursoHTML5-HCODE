@@ -8,14 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Hcode</h1>
+        <h1><a href="https://www.hcode.com.br">Hcode</a></h1>
         <nav></nav>
     </header>
 
     <section>
         <div>
-            <img src="assets/images/hcode.png" alt="Logo da Hcode">
+            <a href="https://www.hcode.com.br" target="_blank"><img src="assets/images/hcode.png" alt="Logo da Hcode"></a>
         </div>
+
+        <form action="/login" method="POST"><!--PAra formulário, é sempre recomendado utilizar o método 'POST', para que as suas informações não fiquem visíveis. O método 'GET', é mais para paginação, onde não há muita preocupação com os dados.-->
+
+            <div>
+                <input type="email" placeholder="Digite o seu e-mail" required><!--placeholder dá uma sujestão para o preenchimento, required serve para obrigar o usuário a digitar o campo.-->
+            </div>
+
+            <div>
+                <input type="password" placeholder="Digite a senha" required>
+            </div>
+
+            <div>
+                <button>Enviar</button>
+            </div>
+
+        </form>
+
     </section>
 
     <footer>
