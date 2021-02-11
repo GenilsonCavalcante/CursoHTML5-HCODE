@@ -40,3 +40,42 @@ body {
     border-bottom-width: 2px;
     margin-bottom: 10px;
 }
+
+.content-center input:focus {
+    border-bottom-color: #D07335;/*Quando clicar, a borda muda para a cor informada.*/
+}
+
+.content-center button {
+    background-color: #D07335;
+    color: #FFF;
+}
+
+.content-center button:hover {/*Fazer um efeito para o botão*/
+    background-color: #B55B28;/*Um laranja mais escuro*/
+    cursor: pointer;/*Faz com que ao passa por cima, aparece a maozinha do cursor*/
+}
+
+.content-center button:active {
+    background-color: #C14E0E;/*Muda a cor ao clicar no botton*/
+}
+
+header a {
+    color: #666;
+    text-decoration: none;/*Estilizando o link.*/
+}
+
+header a:visited {
+    color: #000;/*Depois de ter clicado no link, ter visitado, o link fica preto*/
+}
+
+header a:hover {
+    text-decoration: underline;/*Dá uma lista para identificar que pode ser clicado.*/
+}
+
+header a:focus {
+    color: red;
+}
+
+header a:active {
+    color: yellow;
+}
