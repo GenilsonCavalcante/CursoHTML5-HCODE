@@ -11,6 +11,8 @@ body {
     max-width: 300px;/*Para que não ultrapasse a largura a mais de 300px.*/
     margin: auto;/*Calcula automaticamente.*/
     padding: 20px;
+    background-color: #FFF;
+    border-radius: 15px;/*Faz um arredondamento nas bordas.*/
 }
 
 .content-center .text-center {/**/
@@ -28,4 +30,13 @@ body {
 .content-center input, .content-center button {
     width: 100%;
     padding: 10px 5px;/*Forma abreviada para determinar o espaçamento nos quatro lados.*/
+    border: none;/*Retirando as bordas dos botões*/
+    outline: none;/*Retirando outline dos campos de preenchimento.*/
+}
+
+.content-center input {
+    border-bottom-color: #CCC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
 }
