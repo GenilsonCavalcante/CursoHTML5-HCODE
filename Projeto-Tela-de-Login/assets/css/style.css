@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F2F2F2;
 }
@@ -6,6 +10,7 @@ body {
     width: 100%;/*Tela preenchida em 100% em qualquer dispositivo*/
     max-width: 300px;/*Para que não ultrapasse a largura a mais de 300px.*/
     margin: auto;/*Calcula automaticamente.*/
+    padding: 20px;
 }
 
 .content-center .text-center {/**/
@@ -14,4 +19,13 @@ body {
 
 .content-center img {/*img é descendente do elemento com a classe em questão.*/
     width: 70%;/*Reduzindo o tamanho da imgem*/
+}
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input, .content-center button {
+    width: 100%;
+    padding: 10px 5px;/*Forma abreviada para determinar o espaçamento nos quatro lados.*/
 }
