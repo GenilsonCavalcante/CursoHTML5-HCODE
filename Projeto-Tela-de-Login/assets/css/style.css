@@ -1,3 +1,17 @@
 body {
-    background: black;
+    background-color: #F2F2F2;
+}
+
+.content-center {
+    width: 100%;/*Tela preenchida em 100% em qualquer dispositivo*/
+    max-width: 300px;/*Para que não ultrapasse a largura a mais de 300px.*/
+    margin: auto;/*Calcula automaticamente.*/
+}
+
+.content-center .text-center {/**/
+    text-align: center;
+}
+
+.content-center img {/*img é descendente do elemento com a classe em questão.*/
+    width: 70%;/*Reduzindo o tamanho da imgem*/
 }
