@@ -101,6 +101,21 @@ footer {
     padding: 20px;
 }
 
+.content-tabuada table {
+    width: 100%;/*Para o conteúdo da tabela ser totalmente preenchido.*/
+    border-collapse: collapse;/*Retira o espaçamento em branco entre as colunas.*/
+}
+
 .content-tabuada td {/*Pegar todos os descendente de tabuda td e dar esse espaçamento entre eles de 10px*/
-    padding: 10px;
+    padding: .75rem;
+    border-top: 1px solid #DEE2E6;
+}
+
+.content-tabuada tbody tr:nth-child(odd) {/*Esse parâmetro 'odd', faz com que selecione um elemento e outro não, de forma alternada. IMPAR e PAR. E com o parâmetro 'even', a ordem é mudada. PAR e IMPAR.*/
+    background-color: rgba(0,0,0,.05);
+}
+
+.content-tabuada tbody tr:hover {
+    background-color: rgba(0,0,0,.15);/*Fazendo trazição de cores quando passar a seta do mouse na linha da tabela.*/
+    cursor: pointer;
 }
