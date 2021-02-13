@@ -20,7 +20,7 @@
             </a>
         </div>
 
-        <form action="/login" method="POST"><!--PAra formulário, é sempre recomendado utilizar o método 'POST', para que as suas informações não fiquem visíveis. O método 'GET', é mais para paginação, onde não há muita preocupação com os dados.-->
+        <form action="/login" method="POST" id="form-login"><!--PAra formulário, é sempre recomendado utilizar o método 'POST', para que as suas informações não fiquem visíveis. O método 'GET', é mais para paginação, onde não há muita preocupação com os dados.-->
 
             <div>
                 <input type="email" placeholder="Digite o seu e-mail" required><!--placeholder dá uma sujestão para o preenchimento, required serve para obrigar o usuário a digitar o campo.-->
@@ -31,7 +31,7 @@
             </div>
 
             <div>
-                <button>Enviar</button>
+                <button id="btn-submit">Enviar</button>
             </div>
 
         </form>
