@@ -32,6 +32,7 @@ console.log(`O seu e-mail é: ${email}`);
         password: password
     };
 
+    /*   TRABALHANDO COM JSON
     console.log(json);
 
     let stringJSON = JSON.stringify(json);//Transformando em forma de String.
@@ -41,5 +42,20 @@ console.log(`O seu e-mail é: ${email}`);
     let jsonParse = JSON.parse(stringJSON);//Fazendo o processo inverso de conversão.
 
     console.log(jsonParse);
+    */
+
+    //VALIDAÇÃO DE DADOS COM JAVASCRIPT
+
+    if (!json.email) {
+
+        console.error("O campo email deve ser preenchido!");
+
+    } else if(!json.password) {
+
+        console.error("O campo senha deve ser preenchido!");
+
+    } else {
+        console.info("Dados validados com sucesso!");
+    }
 
  });
