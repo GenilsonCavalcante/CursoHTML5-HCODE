@@ -25,6 +25,21 @@ console.log(`O seu e-mail é: ${email}`);
     let email = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
 
-    console.log(email, password);
+    //console.log(email, password);
+
+    let json = {//Formato JSON
+        email: email,
+        password: password
+    };
+
+    console.log(json);
+
+    let stringJSON = JSON.stringify(json);//Transformando em forma de String.
+
+    console.log(stringJSON);
+
+    let jsonParse = JSON.parse(stringJSON);//Fazendo o processo inverso de conversão.
+
+    console.log(jsonParse);
 
  });
