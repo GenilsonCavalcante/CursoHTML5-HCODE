@@ -91,3 +91,16 @@ footer {
     font-size: .8em;
     text-align: center;
 }
+
+.content-tabuada {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+}
+
+.content-tabuada td {/*Pegar todos os descendente de tabuda td e dar esse espaçamento entre eles de 10px*/
+    padding: 10px;
+}
