@@ -22,5 +22,9 @@ console.log(`O seu e-mail é: ${email}`);
 
     e.preventDefault();//Cancela a ação padrão do navegador.
 
-     console.log('Formulário enviado! Aqui vai o Ajax.');
+    let email = document.querySelector('#email').value;
+    let password = document.querySelector('#password').value;
+
+    console.log(email, password);
+
  });
