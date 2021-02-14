@@ -1,22 +1,30 @@
-let tabuada = document.querySelector('#tabuada tbody');
-let valorA = 5;
+function calculaTabuada(){
 
-tabuada.innerHTML = '';
+    let tabuada = document.querySelector("#tabuada tbody");
+    let valorA = parseInt(document.querySelector("#valorA").value);
 
-for (let valorB = 0; valorB <= 10; valorB++) {
+    tabuada.innerHTML = '';
 
-    let resultado = valorA * valorB;
+    for (let valorB = 0; valorB <= 10; valorB++) {
 
-    let template = `
-            <td>${valorA}</td>
-            <td>*</td>
-            <td>${valorB}</td>
-            <td>=</td>
-            <td>${resultado}</td>
-        `;
-    let tr = document.createElement('tr');//Cria a linha tr e insere com o comando abaixo todos os comados de 'template'.
+        let resultado = valorA * valorB;
 
-    tr.innerHTML = template;
+        let template = `
+                <td>${valorA}</td>
+                <td>*</td>
+                <td>${valorB}</td>
+                <td>=</td>
+                <td>${resultado}</td>
+            `;
+        let tr = document.createElement('tr');//Cria a linha tr e insere com o comando abaixo todos os comados de 'template'.
 
-    tabuada.append(tr);
+        tr.innerHTML = template;
+
+        tabuada.append(tr);
+    }
+    
 }
+
+calculaTabuada();
+
+document.querySelector("#valorA").addEventListener('change', calculaTabuada);

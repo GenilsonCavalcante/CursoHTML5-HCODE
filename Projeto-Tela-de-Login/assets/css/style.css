@@ -119,3 +119,8 @@ footer {
     background-color: rgba(0,0,0,.15);/*Fazendo trazição de cores quando passar a seta do mouse na linha da tabela.*/
     cursor: pointer;
 }
+
+#valorA {
+    width: 100%;
+    padding: 10px;
+}
