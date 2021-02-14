@@ -124,3 +124,23 @@ footer {
     width: 100%;
     padding: 10px;
 }
+
+.todo {/*Retirando a bolinha da lista.*/
+    list-style: none;
+    padding: 0px;
+}
+.todo li {
+    padding: 10px;
+    border-bottom: #CCC 1px solid;
+}
+
+.todo li input {
+    width: initial;/*Voltando ao valor inicial do input para a caxinha checkbox ficar ao lado do conteúdo*/
+    margin: 10px;
+}
+
+.todo li.complete {
+    text-decoration: line-through;
+    color: #999;
+    cursor: not-allowed;/*Quando passar o mouse em cima do elemento, ele fica com uma bolinha vermelha.*/
+}
