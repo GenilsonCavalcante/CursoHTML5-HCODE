@@ -1,43 +1,48 @@
-let data = [{
-    id: 1,
-    title: "Estudar HTML"
-}, {
-    id: 2,
-    title: "Estudar CSS"
-}, {
-    id: 3,
-    title: "Estudar JavaScript"
-}, {
-    id: 4,
-    title: "Estudar PHP"
-}];
+let data = [];
 
-data.forEach(task => {
+function renderTodo() {
 
-    let li = document.createElement('li');
+    document.querySelector('.todo').innerHTML = '';
 
-    li.innerHTML = `
-        <input type="checkbox" id="task-${task.id}"><label for="task-${task.id}">${task.title}</label>
-    `;
+    data.forEach(task => {
 
-    li.querySelector('input').addEventListener("change", e => {
+        let li = document.createElement('li');
 
-        if (e.target.checked) {
-            li.classList.add('complete');
-        } else {
-            li.classList.remove('complete');
-        }
+        li.innerHTML = `
+            <input type="checkbox" id="task-${task.id}"><label for="task-${task.id}">${task.title}</label>
+        `;
 
-    })
+        li.querySelector('input').addEventListener("change", e => {
 
-    document.querySelector('.todo').append(li);
+            if (e.target.checked) {
+                li.classList.add('complete');
+            } else {
+                li.classList.remove('complete');
+            }
 
-});
+        })
+
+        document.querySelector('.todo').append(li);
+
+    });
+
+}//Fechamento da função rederTodo
 
 document.querySelector('#new-task').addEventListener('keyup', e => {
 
     if (e.key === 'Enter') {
-        console.log(e.target.value);
+
+        data.push({
+            id: data.length+1,
+            title: e.target.value
+        });
+
+        e.target.value = "";
+
+        renderTodo();
+
     }
 
 });
+
+renderTodo();
