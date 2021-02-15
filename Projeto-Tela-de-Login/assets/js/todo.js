@@ -10,6 +10,7 @@ function renderTodo() {
 
         li.innerHTML = `
             <input type="checkbox" id="task-${task.id}"><label for="task-${task.id}">${task.title}</label>
+            <button type="button">x</button>
         `;
 
         li.querySelector('input').addEventListener("change", e => {
@@ -19,6 +20,12 @@ function renderTodo() {
             } else {
                 li.classList.remove('complete');
             }
+
+        });
+
+        li.querySelector('button').addEventListener('click', e => {
+
+            console.warn("Você vai deletar este item?");
 
         })
 
