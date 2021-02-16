@@ -13,3 +13,47 @@ header {
     background-size: cover;/*Para cobrir toda a área do header.*/
     background-position: bottom;
 }
+
+header .bg-gradient {
+    min-height: 300px;
+    width: 100%;
+    /*Gradiente conpatível com outros navegadores. Retirado do site: ("https://www.colorzilla.com/gradient-editor/")*/
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+header .header-border {
+    display: flex;
+    border-bottom: rgba(255,255,255,.25) 1px solid;
+}
+
+header #logo {
+    width: 200px;
+    color:#FFF;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: #000 1px 1px 8px;
+}
+header #menu {
+    flex: 1;
+}
+header #menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0px;
+}
+header #menu li {
+    min-width: 100px;
+    line-height: 28px;
+}
+header #menu a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
