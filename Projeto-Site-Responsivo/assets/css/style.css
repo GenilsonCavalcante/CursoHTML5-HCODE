@@ -39,20 +39,20 @@ header #logo {
     font-weight: bold;
     text-shadow: #000 1px 1px 8px;
 }
-header #menu {
+.menu {
     flex: 1;
 }
-header #menu ul {
+.menu ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     padding: 0px;
 }
-header #menu li {
+.menu li {
     min-width: 100px;
     line-height: 28px;
 }
-header #menu a {
+.menu a {
     color: #FFF;
     text-decoration: none;
     font-weight: bold;
@@ -103,4 +103,37 @@ header #menu a {
     color: #FFF;
     padding: .75rem;
     font-size: 1.2em;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title h1 {
+    font-size: 3em;
+    border-bottom: #CCC 1px solid;
+    padding-bottom: 1rem;
+}
+.home p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #F5F5F5;
+    color: #6C757D;
+    font-size: .8em;
+}
+
+footer p {
+    line-height: 35px;
+}
+footer .container {
+    display: flex;
+}
+footer .menu a {
+    color: #6C757D;
 }
