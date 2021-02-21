@@ -138,11 +138,31 @@ footer .menu a {
     color: #6C757D;
 }
 
+.menu .open-menu {
+    display: none;
+}
+
 /*Design Responsive*/
 
 @media(max-width: 450px) {/*Como se fosse um 'if'*/
+    header .header-border {
+        justify-content: space-between;
+    }
     .menu ul {
         display: none;
+    }
+    .menu {
+        width: 60px;
+        flex: initial;
+    }
+    .menu .open-menu {
+        display: block;
+        font-size: 2em;
+        padding: .9rem;
+        flex: 1;
+        background: none;
+        border: none;
+        color: #FFF;
     }
     #register {
         width: 90%;
