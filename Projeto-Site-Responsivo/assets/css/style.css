@@ -141,6 +141,12 @@ footer .menu a {
 .menu .open-menu {
     display: none;
 }
+.backdrop {
+    display: none;
+}
+.close-menu {
+    display: none;
+}
 
 /*Design Responsive*/
 
@@ -158,6 +164,7 @@ footer .menu a {
     }
     .menu.open .backdrop {
         opacity: .5;
+        display: block;
     }
     .menu .backdrop {
         opacity: 0;
